@@ -1,6 +1,16 @@
 import React from 'react';
-import BaseProject from './components/baseProject/baseProject';
+import * as api from './service/gradesService';
 
 export default function App() {
-  return <BaseProject />;
+  const testApi = async() => {
+    const result = await api.getAllGrades();
+    console.log(result);
+  }
+
+  testApi();
+  return (
+    <>
+      <p>hello, world!!!</p>
+    </>
+  );
 }
