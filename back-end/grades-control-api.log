@@ -117,3 +117,87 @@
 2020-08-13T17:29:02.991Z [grades-control-api] info: GET /grade
 2020-08-13T17:29:25.393Z [grades-control-api] info: GET /grade
 2020-08-13T17:29:31.481Z [grades-control-api] info: GET /grade
+2020-08-13T17:31:54.379Z [grades-control-api] info: GET /grade
+2020-08-13T17:31:59.103Z [grades-control-api] info: GET /grade
+2020-08-13T17:32:12.446Z [grades-control-api] info: GET /grade
+2020-08-13T17:33:53.894Z [grades-control-api] info: GET /grade
+2020-08-13T17:34:03.587Z [grades-control-api] info: GET /grade
+2020-08-13T17:34:26.141Z [grades-control-api] info: GET /grade
+2020-08-13T17:34:37.707Z [grades-control-api] info: GET /grade
+2020-08-13T17:34:41.056Z [grades-control-api] info: GET /grade
+2020-08-13T17:36:28.591Z [grades-control-api] info: GET /grade
+2020-08-13T17:36:55.641Z [grades-control-api] info: GET /grade
+2020-08-13T17:37:07.256Z [grades-control-api] info: GET /grade
+2020-08-13T17:38:05.592Z [grades-control-api] info: GET /grade
+2020-08-13T17:38:07.236Z [grades-control-api] info: GET /grade
+2020-08-13T17:39:29.380Z [grades-control-api] info: GET /grade
+2020-08-13T17:40:03.750Z [grades-control-api] info: GET /grade
+2020-08-13T17:40:06.537Z [grades-control-api] info: GET /grade
+2020-08-13T17:40:25.891Z [grades-control-api] info: GET /grade
+2020-08-13T17:40:36.020Z [grades-control-api] info: GET /grade
+2020-08-13T23:27:41.867Z [grades-control-api] info: API started!
+2020-08-13T23:27:41.872Z [grades-control-api] info: POST /grade - {"id":1,"student":"John Petrucci","subject":"01 - JavaScript","type":"Exercícios","value":7,"timestamp":"2020-08-13T23:27:41.871Z"}
+2020-08-13T23:27:41.875Z [grades-control-api] info: POST /grade - {"id":2,"student":"John Petrucci","subject":"02 - Node","type":"Exercícios","value":8,"timestamp":"2020-08-13T23:27:41.874Z"}
+2020-08-13T23:27:41.878Z [grades-control-api] info: POST /grade - {"id":3,"student":"John Petrucci","subject":"03 - React","type":"Exercícios","value":1,"timestamp":"2020-08-13T23:27:41.876Z"}
+2020-08-13T23:27:41.881Z [grades-control-api] info: POST /grade - {"id":4,"student":"John Petrucci","subject":"01 - JavaScript","type":"Trabalho Prático","value":35,"timestamp":"2020-08-13T23:27:41.879Z"}
+2020-08-13T23:27:41.883Z [grades-control-api] info: POST /grade - {"id":5,"student":"John Petrucci","subject":"02 - Node","type":"Trabalho Prático","value":38,"timestamp":"2020-08-13T23:27:41.883Z"}
+2020-08-13T23:27:41.886Z [grades-control-api] info: POST /grade - {"id":6,"student":"John Petrucci","subject":"03 - React","type":"Trabalho Prático","value":29,"timestamp":"2020-08-13T23:27:41.885Z"}
+2020-08-13T23:27:41.888Z [grades-control-api] info: POST /grade - {"id":7,"student":"John Petrucci","subject":"01 - JavaScript","type":"Desafio","value":22,"timestamp":"2020-08-13T23:27:41.887Z"}
+2020-08-13T23:27:41.891Z [grades-control-api] info: POST /grade - {"id":8,"student":"John Petrucci","subject":"02 - Node","type":"Desafio","value":23,"timestamp":"2020-08-13T23:27:41.890Z"}
+2020-08-13T23:27:41.893Z [grades-control-api] info: POST /grade - {"id":9,"student":"John Petrucci","subject":"03 - React","type":"Desafio","value":3,"timestamp":"2020-08-13T23:27:41.892Z"}
+2020-08-13T23:27:41.896Z [grades-control-api] info: POST /grade - {"id":10,"student":"Mike Portnoy","subject":"01 - JavaScript","type":"Exercícios","value":5,"timestamp":"2020-08-13T23:27:41.895Z"}
+2020-08-13T23:27:41.898Z [grades-control-api] info: POST /grade - {"id":11,"student":"Mike Portnoy","subject":"02 - Node","type":"Exercícios","value":4,"timestamp":"2020-08-13T23:27:41.897Z"}
+2020-08-13T23:27:41.900Z [grades-control-api] info: POST /grade - {"id":12,"student":"Mike Portnoy","subject":"03 - React","type":"Exercícios","value":10,"timestamp":"2020-08-13T23:27:41.899Z"}
+2020-08-13T23:27:41.902Z [grades-control-api] info: POST /grade - {"id":13,"student":"Mike Portnoy","subject":"01 - JavaScript","type":"Trabalho Prático","value":32,"timestamp":"2020-08-13T23:27:41.901Z"}
+2020-08-13T23:27:41.905Z [grades-control-api] info: POST /grade - {"id":14,"student":"Mike Portnoy","subject":"02 - Node","type":"Trabalho Prático","value":14,"timestamp":"2020-08-13T23:27:41.904Z"}
+2020-08-13T23:27:41.907Z [grades-control-api] info: POST /grade - {"id":15,"student":"Mike Portnoy","subject":"03 - React","type":"Trabalho Prático","value":15,"timestamp":"2020-08-13T23:27:41.906Z"}
+2020-08-13T23:27:41.909Z [grades-control-api] info: POST /grade - {"id":16,"student":"Mike Portnoy","subject":"01 - JavaScript","type":"Desafio","value":48,"timestamp":"2020-08-13T23:27:41.908Z"}
+2020-08-13T23:27:41.911Z [grades-control-api] info: POST /grade - {"id":17,"student":"Mike Portnoy","subject":"02 - Node","type":"Desafio","value":31,"timestamp":"2020-08-13T23:27:41.910Z"}
+2020-08-13T23:27:41.913Z [grades-control-api] info: POST /grade - {"id":18,"student":"Mike Portnoy","subject":"03 - React","type":"Desafio","value":29,"timestamp":"2020-08-13T23:27:41.912Z"}
+2020-08-13T23:27:41.915Z [grades-control-api] info: POST /grade - {"id":19,"student":"Neal Morse","subject":"01 - JavaScript","type":"Exercícios","value":1,"timestamp":"2020-08-13T23:27:41.914Z"}
+2020-08-13T23:27:41.917Z [grades-control-api] info: POST /grade - {"id":20,"student":"Neal Morse","subject":"02 - Node","type":"Exercícios","value":5,"timestamp":"2020-08-13T23:27:41.916Z"}
+2020-08-13T23:27:41.919Z [grades-control-api] info: POST /grade - {"id":21,"student":"Neal Morse","subject":"03 - React","type":"Exercícios","value":1,"timestamp":"2020-08-13T23:27:41.918Z"}
+2020-08-13T23:27:41.921Z [grades-control-api] info: POST /grade - {"id":22,"student":"Neal Morse","subject":"01 - JavaScript","type":"Trabalho Prático","value":26,"timestamp":"2020-08-13T23:27:41.920Z"}
+2020-08-13T23:27:41.923Z [grades-control-api] info: POST /grade - {"id":23,"student":"Neal Morse","subject":"02 - Node","type":"Trabalho Prático","value":32,"timestamp":"2020-08-13T23:27:41.923Z"}
+2020-08-13T23:27:41.926Z [grades-control-api] info: POST /grade - {"id":24,"student":"Neal Morse","subject":"03 - React","type":"Trabalho Prático","value":7,"timestamp":"2020-08-13T23:27:41.925Z"}
+2020-08-13T23:27:41.929Z [grades-control-api] info: POST /grade - {"id":25,"student":"Neal Morse","subject":"01 - JavaScript","type":"Desafio","value":2,"timestamp":"2020-08-13T23:27:41.928Z"}
+2020-08-13T23:27:41.932Z [grades-control-api] info: POST /grade - {"id":26,"student":"Neal Morse","subject":"02 - Node","type":"Desafio","value":49,"timestamp":"2020-08-13T23:27:41.931Z"}
+2020-08-13T23:27:41.934Z [grades-control-api] info: POST /grade - {"id":27,"student":"Neal Morse","subject":"03 - React","type":"Desafio","value":22,"timestamp":"2020-08-13T23:27:41.933Z"}
+2020-08-13T23:27:50.408Z [grades-control-api] info: GET /grade
+2020-08-13T23:29:20.079Z [grades-control-api] info: GET /grade
+2020-08-13T23:30:03.887Z [grades-control-api] info: GET /grade
+2020-08-13T23:30:52.322Z [grades-control-api] info: GET /grade
+2020-08-13T23:31:25.578Z [grades-control-api] info: GET /grade
+2020-08-13T23:33:47.270Z [grades-control-api] info: GET /grade
+2020-08-13T23:35:27.552Z [grades-control-api] info: GET /grade
+2020-08-13T23:35:32.438Z [grades-control-api] info: GET /grade
+2020-08-13T23:35:37.263Z [grades-control-api] info: GET /grade
+2020-08-13T23:35:49.178Z [grades-control-api] info: GET /grade
+2020-08-13T23:36:26.659Z [grades-control-api] info: GET /grade
+2020-08-13T23:39:50.578Z [grades-control-api] info: GET /grade
+2020-08-13T23:40:48.382Z [grades-control-api] info: GET /grade
+2020-08-13T23:40:57.952Z [grades-control-api] info: GET /grade
+2020-08-13T23:48:01.214Z [grades-control-api] info: GET /grade
+2020-08-13T23:48:27.380Z [grades-control-api] info: GET /grade
+2020-08-13T23:50:06.349Z [grades-control-api] info: GET /grade
+2020-08-13T23:50:55.701Z [grades-control-api] info: GET /grade
+2020-08-13T23:52:03.510Z [grades-control-api] info: GET /grade
+2020-08-13T23:52:41.752Z [grades-control-api] info: GET /grade
+2020-08-13T23:54:06.679Z [grades-control-api] info: GET /grade
+2020-08-13T23:54:19.954Z [grades-control-api] info: GET /grade
+2020-08-13T23:55:53.487Z [grades-control-api] info: GET /grade
+2020-08-13T23:56:17.775Z [grades-control-api] info: GET /grade
+2020-08-13T23:56:37.823Z [grades-control-api] info: GET /grade
+2020-08-13T23:56:42.991Z [grades-control-api] info: GET /grade
+2020-08-13T23:57:37.905Z [grades-control-api] info: GET /grade
+2020-08-13T23:58:49.397Z [grades-control-api] info: GET /grade
+2020-08-13T23:59:29.347Z [grades-control-api] info: GET /grade
+2020-08-14T00:00:04.005Z [grades-control-api] info: GET /grade
+2020-08-14T00:00:23.821Z [grades-control-api] info: GET /grade
+2020-08-14T00:00:32.880Z [grades-control-api] info: GET /grade
+2020-08-14T00:01:05.596Z [grades-control-api] info: GET /grade
+2020-08-14T00:02:35.307Z [grades-control-api] info: GET /grade
+2020-08-14T00:02:39.972Z [grades-control-api] info: GET /grade
+2020-08-14T00:03:17.572Z [grades-control-api] info: GET /grade
+2020-08-14T00:03:19.613Z [grades-control-api] info: GET /grade
+2020-08-14T00:03:39.983Z [grades-control-api] info: GET /grade
