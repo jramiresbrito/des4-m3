@@ -39,14 +39,17 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
   });
 
   const handleActionClick = (id, type) => {
-    console.log({id, type});
+    console.log({ id, type });
   };
 
   return (
     <div className="container">
       {tableGrades.map(({ id, grades }) => {
+        const finalGrade = grades.reduce((acc, curr) => acc + curr.value, 0);
+        const gradeStyle = finalGrade >= 70 ? styles.approved : styles.disapproved;
+
         return (
-          <table className="striped" key={id}>
+          <table style={styles.table} className="striped" key={id}>
             <thead>
               <tr>
                 <th style={{ width: '20%' }}>Aluno</th>
@@ -86,10 +89,35 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
                 }
               )}
             </tbody>
-            <tfoot></tfoot>
+            <tfoot>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td style={{ textAlign: 'right' }}>
+                  <strong>Total:</strong>
+                </td>
+                <td><span style={gradeStyle}>{finalGrade}</span></td>
+              </tr>
+            </tfoot>
           </table>
         );
       })}
     </div>
   );
 }
+
+const styles = {
+  approved: {
+    fontWeight: 'bold',
+    color: 'green',
+  },
+  disapproved: {
+    fontWeight: 'bold',
+    color: 'red',
+  },
+  table: {
+    margin: '32px',
+    padding: '16px',
+  }
+};
