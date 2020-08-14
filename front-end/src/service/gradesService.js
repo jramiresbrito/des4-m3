@@ -115,8 +115,8 @@ async function updateGrade(grade) {
   return res.data;
 }
 
-async function deleteGrade(grade) {
-  const res = await axios.delete(`${API_URL}/${grade.id}`);
+async function deleteGrade(id) {
+  const res = await axios.delete(`${API_URL}/${id}`);
   return res.data;
 }
 

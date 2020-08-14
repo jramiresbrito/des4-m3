@@ -39,14 +39,22 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
   });
 
   const handleActionClick = (id, type) => {
-    console.log({ id, type });
+    const grade = grades.find((grade) => grade.id === id);
+
+    if (type.toLowerCase() === 'delete') {
+      onDelete(id);
+      return;
+    } 
+    
+    onPersist(grade);
   };
 
   return (
     <div className="container">
       {tableGrades.map(({ id, grades }) => {
         const finalGrade = grades.reduce((acc, curr) => acc + curr.value, 0);
-        const gradeStyle = finalGrade >= 70 ? styles.approved : styles.disapproved;
+        const gradeStyle =
+          finalGrade >= 70 ? styles.approved : styles.disapproved;
 
         return (
           <table style={styles.table} className="striped" key={id}>
@@ -97,7 +105,9 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
                 <td style={{ textAlign: 'right' }}>
                   <strong>Total:</strong>
                 </td>
-                <td><span style={gradeStyle}>{finalGrade}</span></td>
+                <td>
+                  <span style={gradeStyle}>{finalGrade}</span>
+                </td>
               </tr>
             </tfoot>
           </table>
@@ -119,5 +129,5 @@ const styles = {
   table: {
     margin: '32px',
     padding: '16px',
-  }
+  },
 };

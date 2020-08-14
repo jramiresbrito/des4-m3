@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import * as api from './service/gradesService';
 import Spinner from './components/Spinner';
 import GradesControl from './components/GradesControl';
+import ModalGrade from './components/ModalGrade';
 
 export default function App() {
   const [allGrades, setAllGrades] = useState([]);
@@ -18,13 +19,44 @@ export default function App() {
     getGrades();
   }, []);
 
-  const handleDelete = () => {
-    console.log('handle delete');
-  }
+  const handleDelete = async (id) => {
+    const isDeleted = await api.deleteGrade(id);
 
-  const handlePersist = () => {
-    console.log('handle persist');
-  }
+    if (isDeleted) {
+      const deletedGradeIndex = allGrades.findIndex((grade) => grade.id === id);
+      const newGrades = Object.assign([], allGrades);
+      newGrades[deletedGradeIndex].isDeleted = true;
+      newGrades[deletedGradeIndex].value = 0;
+
+      setAllGrades(newGrades);
+    }
+  };
+
+  const handlePersist = (grade) => {
+    setSelectedGrade(grade);
+    setIsModalOpen(true);
+  };
+
+  const handlePersistData = async (formData) => {
+    const { id, newValue } = formData;
+    const newGrades = Object.assign([], allGrades);
+    const gradeToPersist = newGrades.find((grade) => grade.id === id);
+
+    gradeToPersist.value = newValue;
+
+    if (gradeToPersist.isDeleted) {
+      gradeToPersist.isDeleted = false;
+      await api.insertGrade(gradeToPersist);
+    } else {
+      await api.updateGrade(gradeToPersist);
+    }
+
+    setIsModalOpen(false);
+  };
+
+  const handleClose = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div>
@@ -34,7 +66,15 @@ export default function App() {
         <GradesControl
           grades={allGrades}
           onDelete={handleDelete}
-          onPersis={handlePersist}
+          onPersist={handlePersist}
+        />
+      )}
+
+      {isModalOpen && (
+        <ModalGrade
+          onSave={handlePersistData}
+          onClose={handleClose}
+          selectedGrade={selectedGrade}
         />
       )}
     </div>
